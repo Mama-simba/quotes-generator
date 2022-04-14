@@ -1,0 +1,24 @@
+{
+  "name": "quotes-generator",
+  "version": "1.0.0",
+  "description": "Project example with NodeJS and ExpressJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Cristina Padilla",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "node-fetch": "^3.2.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mama-simba/quotes-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mama-simba/quotes-generator/issues"
+  },
+  "homepage": "https://github.com/Mama-simba/quotes-generator#readme"
+}
