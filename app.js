@@ -1,16 +1,15 @@
 const express = require('express')
 const app = express()
-const port = 3000
-const fs = require('fs')
+const importData = require("./movies.json")
+const port = process.env.PORT || 3000;
+
 
 app.get('/', (req, res) => {
   res.end('Hello World!');
 });
 
 app.get("/list_movies", (req, res) => {
-    fs.readFile(__dirname + '/' + 'movies.json', 'utf8', (err, data) => {
-        res.end(data);
-    });
+    res.send(importData)
 });
 
 app.listen(port, () => {

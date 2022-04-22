@@ -1,7 +1,7 @@
 {
   "name": "quotes-generator",
   "version": "1.0.0",
-  "description": "Project example with NodeJS and ExpressJS",
+  "description": "Node API hosted on Heroku",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
@@ -12,6 +12,9 @@
     "express": "^4.17.3",
     "node-fetch": "^3.2.3"
   },
+  "engines"{
+    "node": "16.14.0"
+  },  
   "devDependencies": {},
   "repository": {
     "type": "git",
@@ -21,4 +24,5 @@
     "url": "https://github.com/Mama-simba/quotes-generator/issues"
   },
   "homepage": "https://github.com/Mama-simba/quotes-generator#readme"
+  
 }
