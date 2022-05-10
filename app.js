@@ -9,11 +9,13 @@ app.get('/', (req, res) => {
 });
 
 app.get("/list_movies", (req, res) => {
+    res.setHeader("Access-Control-Allow-Origin","*")
     res.send(moviesList)
 });
 
 app.get("/quote", (req, res) => {
     const randomItem = moviesList[Math.floor(Math.random() * moviesList.length)];
+    res.setHeader("Access-Control-Allow-Origin","*")
     res.send(randomItem);
 });
 
