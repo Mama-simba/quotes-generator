@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const importData = require("./movies.json")
+const moviesList = require("./movies.json")
 const port = process.env.PORT || 3000;
 
 
@@ -9,7 +9,12 @@ app.get('/', (req, res) => {
 });
 
 app.get("/list_movies", (req, res) => {
-    res.send(importData)
+    res.send(moviesList)
+});
+
+app.get("/quote", (req, res) => {
+    const randomItem = moviesList[Math.floor(Math.random() * moviesList.length)];
+    res.send(randomItem);
 });
 
 app.listen(port, () => {
